@@ -1,0 +1,51 @@
+
+ <!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Mini Sistema Acadêmico</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h1>Painel do Professor - Controle de Alunos</h1>
+
+        <form id="formAluno">
+            <input type="text" id="nome" placeholder="Nome do Aluno" required>
+            <input type="text" id="ra" placeholder="RA" required>
+            <input type="text" id="curso" placeholder="Curso" required>
+            <input type="number" id="nota1" placeholder="Nota 1" step="0.1" min="0" max="10" required>
+            <input type="number" id="nota2" placeholder="Nota 2" step="0.1" min="0" max="10" required>
+            <button type="submit">Cadastrar Aluno</button>
+        </form>
+
+        <hr>
+
+        <div class="painel-controle">
+            <input type="text" id="pesquisa" placeholder="Pesquisar por nome...">
+            <div class="cards-status">
+                <span>Total: <strong id="totalAlunos">0</strong></span> |
+                <span>Aprovados: <strong id="totalAprovados">0</strong></span> |
+                <span>Reprovados: <strong id="totalReprovados">0</strong></span>
+            </div>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>RA</th>
+                    <th>Curso</th>
+                    <th>Média</th>
+                    <th>Situação</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody id="tabelaAlunos">
+                <!-- Linhas inseridas via JS -->
+            </tbody>
+        </table>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

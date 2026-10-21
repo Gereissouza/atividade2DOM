@@ -1,0 +1,99 @@
+<!-- INTRODUÇÃO A DOM -->
+
+<!-- ex1 -->
+
+<!-- const inputNome = document.querySelector("#nome");
+const btn = document.querySelector("#btnEnviar");
+const resultado = document.querySelector("#resultado");
+
+btn.addEventListener("click", function() {
+    resultado.textContent = `Olá, ${inputNome.value}! Seja bem-vindo!`;
+}); -->
+
+<!-- EX2 -->
+<!--  const titulo = document.querySelector("#titulo");
+const btn = document.querySelector("#btnAlterar");
+
+btn.addEventListener("click", function() {
+    titulo.textContent = "Desenvolvimento de Sistemas — SENAI";
+    titulo.style.color = "#0056b3"; // Desafio extra
+});
+ -->
+
+<!--  EX3 -->
+  <!-- let contador = 0;
+const btn = document.querySelector("#btnContador");
+const exibeContador = document.querySelector("#resultadoContador");
+
+btn.addEventListener("click", function() {
+    contador++;
+    exibeContador.textContent = `Cliques: ${contador}`;
+}); -->
+
+<!-- EX4 -->
+<!--  const statusMsg = document.querySelector("#status");
+const btnToggle = document.querySelector("#btnStatus");
+
+btnToggle.addEventListener("click", function() {
+    statusMsg.textContent = "Status: Atendimento aberto";
+    statusMsg.style.color = "green";
+    statusMsg.style.fontWeight = "bold";
+}); -->
+<!-- 
+EX5 -->
+<!-- const quantidade = document.querySelector("#qtd");
+const preco = document.querySelector("#preco");
+const btnCalcular = document.querySelector("#btnCalcular");
+const resultado = document.querySelector("#resultado");
+
+btnCalcular.addEventListener("click", function() {
+    const total = Number(quantidade.value) * Number(preco.value);
+    resultado.textContent = `Total: R$ ${total.toFixed(2)}`;
+}); -->
+
+<!-- EX6 -->
+<!--  const n1 = document.querySelector("#nota1");
+const n2 = document.querySelector("#nota2");
+const n3 = document.querySelector("#nota3");
+const btn = document.querySelector("#btnMedia");
+const res = document.querySelector("#resNota");
+
+btn.addEventListener("click", function() {
+    const media = (Number(n1.value) + Number(n2.value) + Number(n3.value)) / 3;
+    const situacao = media >= 6 ? "Aprovado" : "Reprovado";
+    res.textContent = `Média: ${media.toFixed(1)} - Status: ${situacao}`;
+}); -->
+<!-- 
+EX7 -->
+<!-- const nome = document.querySelector("#nome");
+const email = document.querySelector("#email");
+const senha = document.querySelector("#senha");
+const btn = document.querySelector("#btnCadastrar");
+const msg = document.querySelector("#mensagem");
+
+btn.addEventListener("click", function() {
+    if (!nome.value || !email.value || !senha.value) {
+        msg.textContent = "Preencha todos os campos.";
+        msg.style.color = "red";
+    } else {
+        msg.textContent = "Cadastro realizado com sucesso!";
+        msg.style.color = "green";
+    }
+});
+ -->
+
+<!--  EX8 -->
+ <!--  const inputTarefa = document.querySelector("#inputTarefa");
+const btnAdd = document.querySelector("#btnAdd");
+const listaUl = document.querySelector("#listaTarefas");
+
+btnAdd.addEventListener("click", function() {
+    if (inputTarefa.value.trim() === "") return;
+
+    const novaLi = document.createElement("li");
+    novaLi.textContent = `☐ ${inputTarefa.value}`;
+
+    listaUl.appendChild(novaLi);
+    inputTarefa.value = ""; // Limpa o campo
+}); -->
+
